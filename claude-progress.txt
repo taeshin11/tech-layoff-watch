@@ -1,35 +1,51 @@
 TECH LAYOFF WATCH - Build Progress
 ===================================
 
-Current Milestone: M1 - Core Dashboard (MVP)
-Current Feature: Starting build
+Current Milestone: COMPLETE - All milestones done
+Status: Deployed to https://tech-layoff-watch.vercel.app/
 
-## Milestone 1: Core Dashboard (MVP)
-- [ ] F01: Monthly trend chart
-- [ ] F02: Company-by-company table
-- [ ] F03: Total affected counter
-- [ ] F04: Year selector
-- [ ] F05: Search/filter by company name
-- [ ] F09: Data loading from static JSON
-- [ ] F10: Responsive mobile-first layout
-- [ ] S07: Semantic HTML throughout
+## Milestone 1: Core Dashboard (MVP) - COMPLETE
+- [x] F01: Monthly trend chart (bar + line overlay with Chart.js)
+- [x] F02: Company-by-company table (sortable by company, date, headcount)
+- [x] F03: Total affected counter (animated count-up)
+- [x] F04: Year selector (All, 2022-2026)
+- [x] F05: Search/filter by company name and industry
+- [x] F09: Data loading from static JSON (data/layoffs.json, 160+ entries)
+- [x] F10: Responsive mobile-first layout
+- [x] S07: Semantic HTML throughout (nav, main, section, article, footer)
 
-## Milestone 2: Enhanced Data Views
-- [ ] F06: Summary stats cards
-- [ ] F07: Company size breakdown pie chart
-- [ ] F08: Timeline view
-- [ ] F11: Table pagination
+## Milestone 2: Enhanced Data Views - COMPLETE
+- [x] F06: Summary stats cards (6 cards: this year, month, companies, events, largest, most affected)
+- [x] F07: Company size breakdown doughnut chart
+- [x] F08: Timeline view (chronological feed, top 10)
+- [x] F11: Table pagination (20 per page with navigation)
 
-## Milestone 3: SEO, Ads & Analytics
-- [ ] S01-S08: SEO meta tags, OG, JSON-LD, sitemap, robots
-- [ ] A01-A02: Adsterra ad placeholders and injection
-- [ ] A04: Visitor counter
-- [ ] A05: Google Sheets webhook
-- [ ] F12: Export data as CSV
+## Milestone 3: SEO, Ads & Analytics - COMPLETE
+- [x] S01: Meta tags (title, description, keywords)
+- [x] S02: Open Graph tags
+- [x] S03: Twitter Card tags
+- [x] S04: JSON-LD structured data (WebApplication + Dataset)
+- [x] S05: sitemap.xml
+- [x] S06: robots.txt
+- [x] S08: Canonical URL
+- [x] A01: Adsterra ad unit placeholders (header, after-chart, in-table, footer)
+- [x] A02: Adsterra ad key injection script (js/ads.js)
+- [x] A04: Visitor counter (localStorage-based, footer)
+- [x] A05: Google Sheets webhook (js/sheets-webhook.js with Apps Script code)
+- [x] F12: Export data as CSV
 
-## Milestone 4: i18n, Pages & Polish
-- [ ] I01-I03: i18n (8 languages)
-- [ ] I04: Social sharing buttons
-- [ ] I05: Feedback email link
-- [ ] A03: Google AdSense fallback
-- [ ] P01-P04: Static pages (About, FAQ, Privacy, Terms)
+## Milestone 4: i18n, Pages & Polish - COMPLETE
+- [x] I01: Auto i18n browser language detection
+- [x] I02: Support 8 languages (EN, KO, JA, ZH, ES, FR, DE, PT)
+- [x] I03: Language selector dropdown in header
+- [x] I04: Social sharing buttons (Twitter, Facebook, LinkedIn, Reddit)
+- [x] I05: Feedback email link (taeshinkim11@gmail.com)
+- [x] A03: Google AdSense fallback (ca-pub-7098271335538021)
+- [x] P01: About page (about.html)
+- [x] P02: FAQ page (faq.html) with JSON-LD FAQPage schema
+- [x] P03: Privacy Policy page (privacy.html)
+- [x] P04: Terms of Service page (terms.html)
+
+## Deployment
+- GitHub: https://github.com/taeshin11/tech-layoff-watch
+- Vercel: https://tech-layoff-watch.vercel.app/
