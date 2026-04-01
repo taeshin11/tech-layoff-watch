@@ -1,0 +1,62 @@
+{
+  "milestones": [
+    {
+      "id": "M1",
+      "name": "Core Dashboard (MVP)",
+      "features": [
+        {"id": "F01", "name": "Monthly trend chart", "status": "incomplete"},
+        {"id": "F02", "name": "Company-by-company table", "status": "incomplete"},
+        {"id": "F03", "name": "Total affected counter", "status": "incomplete"},
+        {"id": "F04", "name": "Year selector", "status": "incomplete"},
+        {"id": "F05", "name": "Search/filter by company name", "status": "incomplete"},
+        {"id": "F09", "name": "Data loading from static JSON", "status": "incomplete"},
+        {"id": "F10", "name": "Responsive mobile-first layout", "status": "incomplete"},
+        {"id": "S07", "name": "Semantic HTML throughout", "status": "incomplete"}
+      ]
+    },
+    {
+      "id": "M2",
+      "name": "Enhanced Data Views",
+      "features": [
+        {"id": "F06", "name": "Summary stats cards", "status": "incomplete"},
+        {"id": "F07", "name": "Company size breakdown pie chart", "status": "incomplete"},
+        {"id": "F08", "name": "Timeline view", "status": "incomplete"},
+        {"id": "F11", "name": "Table pagination", "status": "incomplete"}
+      ]
+    },
+    {
+      "id": "M3",
+      "name": "SEO, Ads & Analytics",
+      "features": [
+        {"id": "S01", "name": "Meta tags", "status": "incomplete"},
+        {"id": "S02", "name": "Open Graph tags", "status": "incomplete"},
+        {"id": "S03", "name": "Twitter Card tags", "status": "incomplete"},
+        {"id": "S04", "name": "JSON-LD structured data", "status": "incomplete"},
+        {"id": "S05", "name": "sitemap.xml", "status": "incomplete"},
+        {"id": "S06", "name": "robots.txt", "status": "incomplete"},
+        {"id": "S08", "name": "Canonical URL", "status": "incomplete"},
+        {"id": "A01", "name": "Adsterra ad unit placeholders", "status": "incomplete"},
+        {"id": "A02", "name": "Adsterra ad key injection script", "status": "incomplete"},
+        {"id": "A04", "name": "Visitor counter", "status": "incomplete"},
+        {"id": "A05", "name": "Google Sheets webhook", "status": "incomplete"},
+        {"id": "F12", "name": "Export data as CSV", "status": "incomplete"}
+      ]
+    },
+    {
+      "id": "M4",
+      "name": "i18n, Pages & Polish",
+      "features": [
+        {"id": "I01", "name": "Auto i18n browser language detection", "status": "incomplete"},
+        {"id": "I02", "name": "Support 8+ languages", "status": "incomplete"},
+        {"id": "I03", "name": "Language selector dropdown", "status": "incomplete"},
+        {"id": "I04", "name": "Social sharing buttons", "status": "incomplete"},
+        {"id": "I05", "name": "Feedback email link", "status": "incomplete"},
+        {"id": "A03", "name": "Google AdSense fallback", "status": "incomplete"},
+        {"id": "P01", "name": "About page", "status": "incomplete"},
+        {"id": "P02", "name": "FAQ page", "status": "incomplete"},
+        {"id": "P03", "name": "Privacy Policy page", "status": "incomplete"},
+        {"id": "P04", "name": "Terms of Service page", "status": "incomplete"}
+      ]
+    }
+  ]
+}

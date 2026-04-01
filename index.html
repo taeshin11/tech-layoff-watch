@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Layoff Watch - Global Tech Industry Layoffs Tracker 2025</title>
+  <meta name="description" content="Track tech industry layoffs in real time. See monthly trends, search by company, and view total affected employees across the global tech sector.">
+  <meta name="keywords" content="tech layoffs 2025, tech layoffs tracker, silicon valley layoffs, tech industry layoffs, company layoffs today, layoff tracker 2025, tech job cuts">
+  <meta name="author" content="Tech Layoff Watch">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tech-layoff-watch.vercel.app/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tech Layoff Watch - Global Tech Industry Layoffs Tracker">
+  <meta property="og:description" content="Track tech industry layoffs in real time. Monthly trends, company-by-company data, and total affected employees.">
+  <meta property="og:url" content="https://tech-layoff-watch.vercel.app/">
+  <meta property="og:image" content="https://tech-layoff-watch.vercel.app/assets/og-image.png">
+  <meta property="og:site_name" content="Tech Layoff Watch">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tech Layoff Watch - Global Tech Industry Layoffs Tracker">
+  <meta name="twitter:description" content="Track tech industry layoffs in real time. Monthly trends, company-by-company data, and total affected employees.">
+  <meta name="twitter:image" content="https://tech-layoff-watch.vercel.app/assets/og-image.png">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Tech Layoff Watch",
+    "description": "Global tech industry layoffs tracker with monthly trends and company-by-company data.",
+    "url": "https://tech-layoff-watch.vercel.app/",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Tech Layoff Watch"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Tech Industry Layoffs Data",
+    "description": "Comprehensive dataset of tech industry layoffs from 2022 to present, including company names, headcounts, dates, and sources.",
+    "url": "https://tech-layoff-watch.vercel.app/",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "temporalCoverage": "2022/2026"
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📉</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7098271335538021" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+        <span>Tech Layoff Watch</span>
+      </a>
+      <ul class="navbar-nav">
+        <li><a href="/" data-i18n="home">Home</a></li>
+        <li><a href="about.html" data-i18n="about">About</a></li>
+        <li><a href="faq.html" data-i18n="faq">FAQ</a></li>
+      </ul>
+      <div class="nav-controls">
+        <select class="lang-selector" aria-label="Select language"></select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Ad: Header Banner -->
+  <div class="container">
+    <div class="ad-slot" id="ad-header-banner" data-ad-key="ADSTERRA_KEY_HERE">
+      <ins class="adsbygoogle adsense-slot" style="display:block" data-ad-client="ca-pub-7098271335538021" data-ad-slot="header" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+
+  <main class="container" role="main">
+    <!-- Hero: Total Affected Counter -->
+    <section class="hero-counter card" aria-label="Total affected employees">
+      <h1 data-i18n="total_affected">Total Employees Affected</h1>
+      <div class="total-number animate-count" id="total-number">0</div>
+      <p class="hero-subtitle" id="hero-subtitle" data-i18n="employees_affected">employees affected across the global tech industry</p>
+    </section>
+
+    <!-- Stats Cards -->
+    <section class="stats-grid" aria-label="Summary statistics">
+      <div class="card stat-card" id="stat-this-year">
+        <span class="stat-value">0</span>
+        <span class="stat-label" data-i18n="total_this_year">This Year</span>
+      </div>
+      <div class="card stat-card accent-blue" id="stat-this-month">
+        <span class="stat-value">0</span>
+        <span class="stat-label" data-i18n="total_this_month">This Month</span>
+      </div>
+      <div class="card stat-card accent-teal" id="stat-companies">
+        <span class="stat-value">0</span>
+        <span class="stat-label" data-i18n="total_companies">Companies</span>
+      </div>
+      <div class="card stat-card accent-amber" id="stat-events">
+        <span class="stat-value">0</span>
+        <span class="stat-label" data-i18n="total_events">Events</span>
+      </div>
+      <div class="card stat-card" id="stat-largest">
+        <span class="stat-value">0</span>
+        <span class="stat-label" data-i18n="largest_event">Largest Event</span>
+      </div>
+      <div class="card stat-card accent-blue" id="stat-most-affected">
+        <span class="stat-value">0</span>
+        <span class="stat-label" data-i18n="most_affected">Most Affected</span>
+      </div>
+    </section>
+
+    <!-- Filters Bar -->
+    <section class="filters-bar" aria-label="Filters">
+      <label data-i18n="year_all">Year:</label>
+      <div id="year-selector" style="display:flex;gap:0.5rem;flex-wrap:wrap;"></div>
+      <input type="text" class="search-input" id="search-input" data-i18n="search_placeholder" placeholder="Search company or industry...">
+    </section>
+
+    <!-- Charts -->
+    <section class="charts-grid section" aria-label="Charts">
+      <div class="card chart-card">
+        <h2 data-i18n="monthly_trend">Monthly Layoff Trend</h2>
+        <div class="chart-container">
+          <canvas id="monthly-chart"></canvas>
+        </div>
+      </div>
+      <div class="card chart-card">
+        <h2 data-i18n="company_breakdown">Company Size Breakdown</h2>
+        <div class="chart-container">
+          <canvas id="pie-chart"></canvas>
+        </div>
+        <!-- Ad: After Chart -->
+        <div class="ad-slot" id="ad-after-chart" data-ad-key="ADSTERRA_KEY_HERE" style="margin-top:1rem;">
+          <ins class="adsbygoogle adsense-slot" style="display:block" data-ad-client="ca-pub-7098271335538021" data-ad-slot="after-chart" data-ad-format="auto"></ins>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layoffs Table -->
+    <section class="card table-card section" aria-label="Layoff events table">
+      <div class="table-header">
+        <h2 data-i18n="layoffs_table">Layoff Events</h2>
+        <div class="table-actions">
+          <button class="btn" id="export-csv">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span data-i18n="export_csv">Export CSV</span>
+          </button>
+        </div>
+      </div>
+      <div id="table-container">
+        <div class="loading"><div class="loading-spinner"></div><p>Loading data...</p></div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="card section" aria-label="Timeline">
+      <h2 style="margin-bottom:1rem;" data-i18n="timeline_title">Recent Timeline</h2>
+      <div class="timeline" id="timeline-container">
+        <div class="loading"><div class="loading-spinner"></div></div>
+      </div>
+    </section>
+
+    <!-- Social Sharing -->
+    <section class="section" aria-label="Share">
+      <h3 style="margin-bottom:0.75rem;" data-i18n="share_title">Share this tracker</h3>
+      <div class="social-share">
+        <a href="https://twitter.com/intent/tweet?text=Track%20tech%20industry%20layoffs%20in%20real%20time&url=https://tech-layoff-watch.vercel.app/" target="_blank" rel="noopener" class="share-btn twitter">Twitter/X</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://tech-layoff-watch.vercel.app/" target="_blank" rel="noopener" class="share-btn facebook">Facebook</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://tech-layoff-watch.vercel.app/" target="_blank" rel="noopener" class="share-btn linkedin">LinkedIn</a>
+        <a href="https://reddit.com/submit?url=https://tech-layoff-watch.vercel.app/&title=Tech%20Layoff%20Watch%20-%20Global%20Tech%20Industry%20Layoffs%20Tracker" target="_blank" rel="noopener" class="share-btn reddit">Reddit</a>
+      </div>
+    </section>
+
+    <!-- Feedback -->
+    <section class="feedback-bar section" aria-label="Feedback">
+      <p data-i18n="feedback_text">Help us improve this tracker. Send us your suggestions or data corrections.</p>
+      <a href="mailto:taeshinkim11@gmail.com?subject=Tech%20Layoff%20Watch%20Feedback" class="btn btn-primary" data-i18n="feedback_btn">Send Feedback</a>
+    </section>
+
+    <!-- Ad: Footer Banner -->
+    <div class="ad-slot" id="ad-footer" data-ad-key="ADSTERRA_KEY_HERE">
+      <ins class="adsbygoogle adsense-slot" style="display:block" data-ad-client="ca-pub-7098271335538021" data-ad-slot="footer" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Tech Layoff Watch</h3>
+          <p style="font-size:0.875rem;" data-i18n="footer_desc">Tracking tech industry layoffs with data from public sources. Updated regularly.</p>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer_links">Links</h3>
+          <a href="/" data-i18n="home">Home</a>
+          <a href="about.html" data-i18n="about">About</a>
+          <a href="faq.html" data-i18n="faq">FAQ</a>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer_legal">Legal</h3>
+          <a href="privacy.html" data-i18n="privacy">Privacy</a>
+          <a href="terms.html" data-i18n="terms">Terms</a>
+        </div>
+        <div class="footer-section">
+          <h3 data-i18n="footer_contact">Contact</h3>
+          <a href="mailto:taeshinkim11@gmail.com">taeshinkim11@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tech Layoff Watch. All rights reserved.</p>
+        <div class="visitor-counter">
+          <span><span data-i18n="visitors_today">Today</span>: <strong id="visitors-today">--</strong></span>
+          <span><span data-i18n="visitors_total">Total</span>: <strong id="visitors-total">--</strong></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/data-loader.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/table.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/visitor.js"></script>
+  <script src="js/sheets-webhook.js"></script>
+  <script src="js/ads.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

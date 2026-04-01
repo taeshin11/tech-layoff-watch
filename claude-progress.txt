@@ -1,0 +1,35 @@
+TECH LAYOFF WATCH - Build Progress
+===================================
+
+Current Milestone: M1 - Core Dashboard (MVP)
+Current Feature: Starting build
+
+## Milestone 1: Core Dashboard (MVP)
+- [ ] F01: Monthly trend chart
+- [ ] F02: Company-by-company table
+- [ ] F03: Total affected counter
+- [ ] F04: Year selector
+- [ ] F05: Search/filter by company name
+- [ ] F09: Data loading from static JSON
+- [ ] F10: Responsive mobile-first layout
+- [ ] S07: Semantic HTML throughout
+
+## Milestone 2: Enhanced Data Views
+- [ ] F06: Summary stats cards
+- [ ] F07: Company size breakdown pie chart
+- [ ] F08: Timeline view
+- [ ] F11: Table pagination
+
+## Milestone 3: SEO, Ads & Analytics
+- [ ] S01-S08: SEO meta tags, OG, JSON-LD, sitemap, robots
+- [ ] A01-A02: Adsterra ad placeholders and injection
+- [ ] A04: Visitor counter
+- [ ] A05: Google Sheets webhook
+- [ ] F12: Export data as CSV
+
+## Milestone 4: i18n, Pages & Polish
+- [ ] I01-I03: i18n (8 languages)
+- [ ] I04: Social sharing buttons
+- [ ] I05: Feedback email link
+- [ ] A03: Google AdSense fallback
+- [ ] P01-P04: Static pages (About, FAQ, Privacy, Terms)
