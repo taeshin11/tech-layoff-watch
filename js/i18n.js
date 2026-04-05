@@ -22,13 +22,29 @@ const i18n = (() => {
       console.error('Failed to load translations:', e);
     }
 
-    // Detect language
-    const saved = localStorage.getItem('preferred_lang');
-    if (saved && supportedLangs.includes(saved)) {
-      currentLang = saved;
-    } else {
-      const userLang = navigator.language || navigator.languages?.[0] || 'en';
-      currentLang = supportedLangs.find(l => userLang.startsWith(l)) || 'en';
+    // Detect language: URL param > saved preference > browser auto-detect
+    try {
+      const urlParam = new URLSearchParams(window.location.search).get('lang');
+      if (urlParam && supportedLangs.includes(urlParam)) {
+        currentLang = urlParam;
+        localStorage.setItem('preferred_lang', urlParam);
+      } else {
+        const saved = localStorage.getItem('preferred_lang');
+        if (saved && supportedLangs.includes(saved)) {
+          currentLang = saved;
+        } else {
+          const userLang = navigator.language || navigator.languages?.[0] || 'en';
+          currentLang = supportedLangs.find(l => userLang.startsWith(l)) || 'en';
+        }
+      }
+    } catch (e) {
+      const saved = localStorage.getItem('preferred_lang');
+      if (saved && supportedLangs.includes(saved)) {
+        currentLang = saved;
+      } else {
+        const userLang = navigator.language || navigator.languages?.[0] || 'en';
+        currentLang = supportedLangs.find(l => userLang.startsWith(l)) || 'en';
+      }
     }
 
     populateLangSelector();

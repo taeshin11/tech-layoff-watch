@@ -46,7 +46,11 @@
     "visitors_total": "Total",
     "employees": "employees",
     "departments": "departments",
-    "affected": "affected"
+    "affected": "affected",
+    "feedbackWidgetTitle": "Send Feedback",
+    "feedbackWidgetPlaceholder": "Your message...",
+    "feedbackWidgetSubmit": "Send",
+    "feedbackWidgetClose": "Close"
   },
   "ko": {
     "site_title": "Tech Layoff Watch",
@@ -95,7 +99,11 @@
     "visitors_total": "\ucd1d",
     "employees": "\uba85",
     "departments": "\ubd80\uc11c",
-    "affected": "\uc601\ud5a5"
+    "affected": "\uc601\ud5a5",
+    "feedbackWidgetTitle": "\ud53c\ub4dc\ubc31 \ubcf4\ub0b4\uae30",
+    "feedbackWidgetPlaceholder": "\uba54\uc2dc\uc9c0\ub97c \uc785\ub825\ud558\uc138\uc694...",
+    "feedbackWidgetSubmit": "\ubcf4\ub0b4\uae30",
+    "feedbackWidgetClose": "\ub2eb\uae30"
   },
   "ja": {
     "site_title": "Tech Layoff Watch",
@@ -144,7 +152,11 @@
     "visitors_total": "\u5408\u8a08",
     "employees": "\u4eba",
     "departments": "\u90e8\u7f72",
-    "affected": "\u5f71\u97ff"
+    "affected": "\u5f71\u97ff",
+    "feedbackWidgetTitle": "\u30d5\u30a3\u30fc\u30c9\u30d0\u30c3\u30af\u3092\u9001\u308b",
+    "feedbackWidgetPlaceholder": "\u30e1\u30c3\u30bb\u30fc\u30b8\u3092\u5165\u529b...",
+    "feedbackWidgetSubmit": "\u9001\u4fe1",
+    "feedbackWidgetClose": "\u9589\u3058\u308b"
   },
   "zh": {
     "site_title": "Tech Layoff Watch",
@@ -193,7 +205,11 @@
     "visitors_total": "\u603b\u8ba1",
     "employees": "\u4eba",
     "departments": "\u90e8\u95e8",
-    "affected": "\u53d7\u5f71\u54cd"
+    "affected": "\u53d7\u5f71\u54cd",
+    "feedbackWidgetTitle": "\u53d1\u9001\u53cd\u9988",
+    "feedbackWidgetPlaceholder": "\u8bf7\u8f93\u5165\u60a8\u7684\u6d88\u606f...",
+    "feedbackWidgetSubmit": "\u53d1\u9001",
+    "feedbackWidgetClose": "\u5173\u95ed"
   },
   "es": {
     "site_title": "Tech Layoff Watch",
@@ -242,7 +258,11 @@
     "visitors_total": "Total",
     "employees": "empleados",
     "departments": "departamentos",
-    "affected": "afectados"
+    "affected": "afectados",
+    "feedbackWidgetTitle": "Enviar comentarios",
+    "feedbackWidgetPlaceholder": "Tu mensaje...",
+    "feedbackWidgetSubmit": "Enviar",
+    "feedbackWidgetClose": "Cerrar"
   },
   "fr": {
     "site_title": "Tech Layoff Watch",
@@ -291,7 +311,11 @@
     "visitors_total": "Total",
     "employees": "employ\u00e9s",
     "departments": "d\u00e9partements",
-    "affected": "affect\u00e9s"
+    "affected": "affect\u00e9s",
+    "feedbackWidgetTitle": "Envoyer des commentaires",
+    "feedbackWidgetPlaceholder": "Votre message...",
+    "feedbackWidgetSubmit": "Envoyer",
+    "feedbackWidgetClose": "Fermer"
   },
   "de": {
     "site_title": "Tech Layoff Watch",
@@ -340,7 +364,11 @@
     "visitors_total": "Gesamt",
     "employees": "Mitarbeiter",
     "departments": "Abteilungen",
-    "affected": "betroffen"
+    "affected": "betroffen",
+    "feedbackWidgetTitle": "Feedback senden",
+    "feedbackWidgetPlaceholder": "Ihre Nachricht...",
+    "feedbackWidgetSubmit": "Senden",
+    "feedbackWidgetClose": "Schlie\u00dfen"
   },
   "pt": {
     "site_title": "Tech Layoff Watch",
@@ -389,6 +417,10 @@
     "visitors_total": "Total",
     "employees": "funcion\u00e1rios",
     "departments": "departamentos",
-    "affected": "afetados"
+    "affected": "afetados",
+    "feedbackWidgetTitle": "Enviar feedback",
+    "feedbackWidgetPlaceholder": "Sua mensagem...",
+    "feedbackWidgetSubmit": "Enviar",
+    "feedbackWidgetClose": "Fechar"
   }
 }
