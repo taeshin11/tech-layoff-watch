@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - Tech Layoff Watch</title>
-  <meta name="description" content="Frequently asked questions about Tech Layoff Watch, the global tech industry layoffs tracker.">
+  <title>FAQ - Tech Layoff Watch | Questions About Tech Industry Layoff Data</title>
+  <meta name="description" content="Frequently asked questions about Tech Layoff Watch: where layoff data comes from, how accurate it is, how job seekers should use it, WARN Act explained, and how to report incorrect data.">
+  <meta name="keywords" content="tech layoff FAQ, layoff data accuracy, WARN Act explained, tech layoff tracker questions, how to track tech layoffs, layoff data sources">
   <link rel="canonical" href="https://tech-layoff-watch.vercel.app/faq.html">
   <meta property="og:title" content="FAQ - Tech Layoff Watch">
-  <meta property="og:description" content="Frequently asked questions about Tech Layoff Watch.">
+  <meta property="og:description" content="Frequently asked questions about Tech Layoff Watch — where data comes from, how accurate it is, how to filter by company or year, and how job seekers should interpret the data.">
   <meta property="og:url" content="https://tech-layoff-watch.vercel.app/faq.html">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📉</text></svg>">
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="css/style.css">
@@ -20,18 +22,50 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is Tech Layoff Watch?",
+        "name": "Where does the layoff data come from?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tech Layoff Watch is a free dashboard that tracks tech company layoffs by month, company, and headcount. It visualizes layoff trends with interactive charts and provides a searchable company-by-company table."
+          "text": "Tech Layoff Watch aggregates data from multiple publicly available sources including official company press releases, SEC filings (particularly 8-K current reports for publicly traded companies), reputable news organizations such as TechCrunch, Bloomberg, Reuters, and The Wall Street Journal, and established industry tracking platforms. Every data entry includes a source link so users can independently verify the information."
         }
       },
       {
         "@type": "Question",
-        "name": "Where does the data come from?",
+        "name": "How accurate is the layoff data?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our data is curated from public sources including company press releases, SEC filings, and reputable news organizations like TechCrunch, Bloomberg, and Reuters."
+          "text": "We strive for accuracy by cross-referencing multiple sources for each event. However, reported layoff numbers can vary between sources, and some companies do not disclose precise figures. When exact numbers are unavailable, we note that the figure is approximate. We always link to our sources so you can verify independently. We recommend treating our figures as well-researched estimates rather than definitive counts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What time period does the data cover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our dataset covers tech industry layoffs from January 2022 to the present. The year 2022 is our starting point because it marks the beginning of the sustained tech layoff cycle that followed the pandemic-era hiring boom. You can filter the dashboard to view data for any specific year using the year selector buttons."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I filter data by company or year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the search bar on the main dashboard to filter by company name or industry keyword. The charts, table, and statistics will automatically update to show only matching results. To filter by year, click one of the year selector buttons (2022, 2023, 2024, 2025, 2026, or All Years) above the charts. Year and search filters can be combined."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do the charts show?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The monthly layoff trend chart shows total employees affected per calendar month, helping you identify peak periods and the overall trajectory. The company size breakdown pie chart categorizes layoffs by the scale of the companies involved. Both charts update dynamically when you apply search or year filters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How should job seekers use this data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Job seekers can use Tech Layoff Watch to research the layoff history of companies they are considering. A company with multiple recent layoff rounds may indicate financial instability or strategic uncertainty. Conversely, companies absent from the layoff tracker during an industry-wide downturn often demonstrate relative financial strength. Use this data as one research signal alongside glassdoor reviews, financial news, and your recruiter conversations."
         }
       },
       {
@@ -39,15 +73,15 @@
         "name": "How often is the data updated?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "We aim to update the data monthly at minimum. Major layoff events are typically added within a few days of public announcement."
+          "text": "We aim to update the dataset at least monthly. Major layoff events from well-known companies are typically added within a few days of the public announcement. Smaller or regional layoff events may be added during our periodic review cycles."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I export the data?",
+        "name": "What is the WARN Act and why does it matter for layoff data?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, you can export the current filtered data as a CSV file using the Export CSV button on the main dashboard."
+          "text": "The WARN Act (Worker Adjustment and Retraining Notification Act) is a US federal law that requires employers with 100 or more full-time employees to provide at least 60 days advance notice before conducting mass layoffs affecting 50 or more workers. WARN Act notices are public records filed with state workforce agencies, making them a valuable source of verified layoff data for US-based companies. However, WARN Act filings have limitations: they only cover the US, only apply to companies of sufficient size, and some companies pay penalties rather than comply with the notice requirement."
         }
       }
     ]
@@ -55,7 +89,7 @@
   </script>
 </head>
 <body>
-  <nav class="navbar" role="navigation">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
       <a href="/" class="navbar-brand">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
@@ -77,65 +111,78 @@
       <h1>Frequently Asked Questions</h1>
 
       <div class="faq-item">
-        <h3>What is Tech Layoff Watch?</h3>
-        <p>Tech Layoff Watch is a free dashboard that tracks tech company layoffs by month, company, and headcount. It visualizes layoff trends with interactive charts and provides a searchable company-by-company table with a running total of affected employees.</p>
+        <h3>Where does the layoff data come from?</h3>
+        <p>Tech Layoff Watch aggregates data from multiple publicly available sources to ensure accuracy and completeness. Our primary sources include official company press releases and public blog posts, which provide the most direct headcount figures; SEC filings (particularly 8-K current reports filed by publicly traded US companies), which carry legal attestation of material business events including significant workforce reductions; reputable news organizations such as TechCrunch, Bloomberg, Reuters, The Wall Street Journal, The Verge, and Wired, which often break layoff news before official company statements; and established industry tracking platforms that maintain independent databases of layoff events. Every entry in our dataset includes at least one source link so you can verify the information independently. We do not accept unverified tips or anonymous submissions as primary data sources.</p>
       </div>
 
       <div class="faq-item">
-        <h3>Where does the data come from?</h3>
-        <p>Our data is curated from multiple public sources including company press releases, SEC filings, and reputable news organizations like TechCrunch, Bloomberg, and Reuters. Each entry includes a source link for verification.</p>
+        <h3>How accurate is the layoff data?</h3>
+        <p>We strive for accuracy by cross-referencing multiple sources for each event before publishing. However, there are inherent limitations in any layoff dataset that users should understand. First, reported headcount figures can vary significantly between sources — a company may announce "approximately 10% of our workforce" without providing an exact number, leading different news outlets to report different absolute figures. Second, some companies, particularly private ones, choose not to disclose precise layoff figures at all, and in those cases our numbers are based on the best available estimates from credible reporting. Third, layoffs sometimes happen in waves over weeks or months, and matching individual announcements to a single event date involves editorial judgment. We recommend treating our figures as well-researched, good-faith estimates rather than official certified counts. For the most precise figures on public companies, SEC filings are the authoritative source.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What time period does the data cover?</h3>
+        <p>Our dataset covers tech industry layoffs from January 2022 through the present. We chose 2022 as our starting point because it marks the beginning of the sustained tech layoff cycle that followed the extraordinary pandemic-era hiring boom of 2020-2021. During those years, technology companies scaled their workforces at historically unprecedented rates, driven by elevated digital demand and near-zero interest rate financing. When macroeconomic conditions shifted in 2022 — with rising interest rates, normalizing demand, and reduced venture capital activity — the sector began a multi-year adjustment that is still unfolding. By tracking from 2022, we capture the full arc of this cycle. You can filter the dashboard to any specific year (2022 through the current year) or view all years together using the year selector buttons above the charts.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I filter data by company or year?</h3>
+        <p>Filtering on Tech Layoff Watch is designed to be intuitive and responsive. To filter by company or industry, simply type into the search bar on the main dashboard. The search matches against company names, industry categories, and other text fields in the dataset. As you type, the monthly trend chart, company breakdown pie chart, layoff events table, and summary statistics all update in real time to reflect only the matching records. To filter by year, click one of the year selector buttons displayed above the charts — options include individual years from 2022 through the current year, plus an "All Years" option to reset to the full dataset. Year and text search filters are cumulative: you can, for example, search for "Amazon" and select "2023" to see only Amazon layoffs reported in that year. To clear all filters and return to the full dataset, clear the search box and click "All Years."</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What do the charts show and how should I interpret them?</h3>
+        <p>Tech Layoff Watch features two primary charts, each designed to reveal a different dimension of the data. The <strong>Monthly Layoff Trend</strong> chart is a bar or line chart showing the total number of employees affected by layoffs in each calendar month. This view helps you identify the rhythm of the layoff cycle — peak months, periods of relative calm, and whether the overall trend is improving or worsening. Spikes in this chart often correspond to major company announcements that drove widespread media coverage. The <strong>Company Size Breakdown</strong> pie chart categorizes layoffs by the scale of the companies involved (large enterprises, mid-size companies, and startups). This view reveals whether workforce reductions are concentrated among the largest tech companies or distributed across the ecosystem. Both charts respond dynamically to the year filter and search filter, so you can use them to explore specific subsets of the data rather than always looking at the full picture.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How should job seekers use this data?</h3>
+        <p>Tech Layoff Watch provides job seekers with a practical research tool for evaluating potential employers during a period of significant industry volatility. Here is how we recommend using it. First, search for specific companies you are interviewing with or considering. A company that has conducted multiple rounds of layoffs within a short period, particularly if those rounds occurred despite otherwise stable market conditions, may warrant additional due diligence about financial health and strategic direction. Second, look at the layoff timing relative to major business events — did layoffs precede or follow a funding round, earnings miss, or leadership change? Third, use the absence of a company from our tracker as a positive signal — companies that maintained or grew headcount during an industry-wide downturn often demonstrate stronger financial foundations. Importantly, always combine our data with other research: employee reviews on platforms like Glassdoor, LinkedIn company updates, and conversations with people who work or have worked at the company. Layoff data is one signal, not a complete picture.</p>
       </div>
 
       <div class="faq-item">
         <h3>How often is the data updated?</h3>
-        <p>We aim to update the data monthly at minimum. Major layoff events from well-known companies are typically added within a few days of public announcement.</p>
+        <p>We aim to update the dataset at least once per month as part of a regular review cycle. Major layoff events from well-known companies — particularly those covered by multiple major news outlets — are typically added within a few days of the public announcement, since these events are immediately prominent in our source monitoring. Smaller layoff events, or reductions at private companies with limited press coverage, may be added during our monthly review process rather than in real time. We also conduct retrospective reviews to add or correct events that were initially missed or under-reported. If you are aware of a layoff event that is not in our dataset, you can report it to <a href="mailto:taeshinkim11@gmail.com">taeshinkim11@gmail.com</a> with a credible source link and we will review it for inclusion.</p>
       </div>
 
       <div class="faq-item">
-        <h3>Can I export the data?</h3>
-        <p>Yes! Click the "Export CSV" button on the main dashboard to download the current filtered dataset as a CSV file that you can open in Excel, Google Sheets, or any spreadsheet application.</p>
+        <h3>How do I report incorrect or missing data?</h3>
+        <p>We take data accuracy seriously and genuinely welcome corrections. If you notice a data error — whether it is a wrong headcount figure, incorrect date, misidentified company, or a significant layoff event that is entirely missing from our dataset — please email us at <a href="mailto:taeshinkim11@gmail.com">taeshinkim11@gmail.com</a>. In your message, include the company name, the event you believe is incorrect or missing, the correction you are proposing, and most importantly a credible source link (such as a company press release, SEC filing, or major news article) that supports the correction. We will review all submissions and, where the evidence supports it, update the dataset. We do not accept anonymous reports without source links, as maintaining data integrity requires verifiable evidence.</p>
       </div>
 
       <div class="faq-item">
-        <h3>How do I search for a specific company?</h3>
-        <p>Use the search bar on the main dashboard. You can search by company name or industry. The chart, table, and statistics will automatically update to show only matching results.</p>
+        <h3>What is the WARN Act and why does it matter for layoff data?</h3>
+        <p>The Worker Adjustment and Retraining Notification (WARN) Act is a United States federal law enacted in 1988 that requires covered employers to provide at least 60 days advance written notice before conducting a "mass layoff" (defined as a workforce reduction affecting at least 50 employees at a single site and constituting at least 33% of the workforce, or any reduction affecting 500 or more employees). WARN Act notices are filed with state workforce agencies and are public records, making them one of the most reliable sources of verified layoff data for US-based companies. Many states have their own "mini-WARN" acts with lower thresholds or additional requirements. The practical significance for layoff tracking is that WARN filings provide official documentation of layoffs that companies might otherwise handle quietly, and they establish a paper trail that researchers, journalists, and policymakers can use. However, WARN data has important limitations: it only covers the United States, only applies to companies with 100 or more employees, excludes part-time workers from headcount calculations in some contexts, and allows exceptions for "unforeseeable business circumstances" that companies sometimes invoke to avoid the notice requirement. For international tech layoffs, no equivalent mandatory disclosure mechanism exists, making cross-border layoff tracking more dependent on voluntary company disclosures and media reporting.</p>
       </div>
 
-      <div class="faq-item">
-        <h3>How do I filter by year?</h3>
-        <p>Use the year selector buttons on the dashboard. Click "All Years" to see all data, or select a specific year (2022-2026) to filter events for that year only.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Is this data accurate?</h3>
-        <p>We strive for accuracy by cross-referencing multiple sources. However, layoff numbers can vary between reports and some companies do not disclose exact figures. We always link to our source so you can verify independently.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Can I submit a layoff report?</h3>
-        <p>Currently, we curate data from public sources. If you have information about a layoff event with a credible source, please send it to <a href="mailto:taeshinkim11@gmail.com">taeshinkim11@gmail.com</a> and we will review it for inclusion.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>Is this service free?</h3>
-        <p>Yes, Tech Layoff Watch is completely free to use. We sustain the service through non-intrusive advertising.</p>
-      </div>
-
-      <div class="faq-item">
-        <h3>What languages are supported?</h3>
-        <p>The interface is available in 8 languages: English, Korean, Japanese, Chinese (Simplified), Spanish, French, German, and Portuguese. Use the language selector in the top navigation to switch languages.</p>
-      </div>
     </div>
   </main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-bottom">
-        <p>&copy; 2025 Tech Layoff Watch. All rights reserved.</p>
-        <div>
-          <a href="privacy.html" style="color:#94A3B8;text-decoration:none;margin-right:1rem;">Privacy</a>
-          <a href="terms.html" style="color:#94A3B8;text-decoration:none;">Terms</a>
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Tech Layoff Watch</h3>
+          <p style="font-size:0.875rem;">Tracking tech industry layoffs with data from public sources. Updated regularly.</p>
         </div>
+        <div class="footer-section">
+          <h3>Links</h3>
+          <a href="/">Home</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <a href="mailto:taeshinkim11@gmail.com">taeshinkim11@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tech Layoff Watch. All rights reserved.</p>
       </div>
     </div>
   </footer>
